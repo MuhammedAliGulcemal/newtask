@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: #E7EAFF;
+            flex-direction: column;
+        }
+        header,main,footer{
+            background-color: white;
+            width: 600px;
+        }
+        .flex-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            height: 49px;
+            width: 504px;
+            text-align: center;
+        }
+        .main{
+            flex-direction: column;
+            width: 544px;
+            height: 636px;
+        }
+        .main-button{
+            line-height: 16px;
+            letter-spacing: 0.13px;
+            border-radius: 4px;
+            border: 1px solid black;
+            background-color: white;
+            padding: 13px;
+        }
+        main{
+            gap: 24px;
+            padding-block: 20px;
+            flex-direction: column;
+        }
+        .main-text{
+            width: 504px;
+            height: 72px;
+            text-align: center;
+        }
+        .logo{
+            width: 123px;
+            height: 40px;
+        }
+        .section-one{
+
+        }
+        .cover{
+            width: 568px;
+            height: 260px;
+        }
+        .image-cover{
+            width: 284px;
+            height: 260px;
+            padding-inline: 12px;
+        }
+        .text-cover{
+            width: 284px;
+            height: 148px;
+            gap: 8px;
+        }
+        .right{
+            flex-direction: column;
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            padding-inline: 12px;
+            padding-block: 16px;
+        }
+        .section-title{
+            width: 260px;
+            height: 68px;
+            color: #1C1E23;
+
+        }
+        .section-text{
+            width: 260px;
+            height: 72px;
+        }
+        .hr{
+            width: 540px;
+            height: 2px;
+           
+            background-color: #000000;
+        }
+        .footer{
+            height: 250px;
+            width: 559px;
+            flex-direction: column;
+          
+        }
+        .footer-text-cover{
+            flex-direction: column;
+            gap: 25px;
+        }
+        .address-cover{
+            flex-direction: column;
+            width: 165px;
+            height: 63px;
+        }
+        .footer-text{
+            line-height: 142.5%;
+            font-size: 13px;
+        }
+        
+    </style>
+</head>
+<body class="flex-center">
+    <div style="background-color: white; gap: 40px; flex-direction: column;" class="flex-center">
+        <header class="flex-center">
+            <h1 class="logo">LOGO</h1>
+     </header>
+     <main class="flex-center">
+         <div class="main flex-center">
+             <h1 class="title">
+                 Email Template
+             </h1>
+                 <img src="Tech Life Pet Adoption.png" alt="">
+             <p class="main-text">Boost your emails with Blush! Create dope emails easy and fast!  Install the Blush plugin to customize all the illustrations!</p>
+             <button class="main-button">Try it now!</button>
+         </div>
+         <div class="section-one flex-center" style="display: none;">
+            <div class="cover flex-center">
+                <div class="image-cover">
+                    <img src="Image (3).png" alt="">
+                </div>
+                <div class="right">
+                    <div class="text-cover">
+                        <h1 class="section-title">Customize this email template!</h1>
+                        <p class="section-text">Boost your emails with Blush! Create dope emails easy and fast! </p>
+                    </div>
+                    <button class="main-button">Try it now!</button>
+                </div>
+                
+            </div>
+            
+         </div>
+     </main>
+     <hr class="hr">
+     <footer class="footer flex-center">
+        <div class="footer-text-cover flex-center">
+            <div class="footer-coop">Corporation</div>
+            <div class="footer-text">You are receiving this email because you opted in via our website.</div>
+            <div>
+                <i class="fa-brands fa-instagram" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div  class="address-cover flex-center">
+                <div style="text-align: center;">Address, #PC<br>
+                    City, State.</div>
+                <a href="">Unsubscribe</a>
+            </div>
+        </div>
+        <h1 class="logo">LOGO</h1>
+     </footer>
+    </div>
+    <script>
+        const myTimeout = setTimeout(load, 3000);
+        const section =  document.querySelector(".section-one")
+        function load() {
+
+            section.style.display = "flex"
+            section.scrollIntoView()
+        }   
+      
+    </script>
+    
+</body>
+</html>
